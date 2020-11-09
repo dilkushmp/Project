@@ -1,0 +1,85 @@
+[
+  {
+    "date":"Fall 2019",
+    "students":[  
+      {
+        "name":"Xu, Ting",
+        "title":"Amazon Robotics",
+        "image":"Ting",
+        "email":"ting_xu@berkeley.edu"
+     },
+    ]
+  },
+  {
+    "date":"Fall 2018",
+    "students":[  
+      {
+      "name":"Wang, Taohan",
+      "title":"",
+      "image":"Taohan",
+      "email":"taohanwang@berkeley.edu"
+   }
+    ]
+  },
+  {
+    "date":"Fall 2016",
+    "students":[  
+      {  
+        "name":"Wai, Dennis",
+        "title":"Precision Motion Control",
+        "image":"Dennis",
+        "email":"dwai213@berkeley.edu",
+        "homepage":"http://denniswai.com/"
+      }
+    ]
+  },
+  {
+    "date":"Spring 2013",
+    "students":[  
+      {  
+        "name":"Niki, Hiroshi",
+        "title":"Central Japan Railway Company",
+        "image":"Hiroshi",
+        "email":"hiroshi.niki@berkeley.edu",
+        "company":"http://english.jr-central.co.jp/index.html"
+      }
+    ]
+  },
+  {  
+    "date":"Fall 2012",
+    "students":[  
+      {  
+        "name":"Abdul-hadi, Omar",
+        "title":"",
+        "image":"Omar",
+        "email":"omarabdalhadi@gmail.com"
+      }
+    ]
+  },
+  {  
+    "date":"Spring 2011",
+    "students":[  
+      {  
+        "name":"Suzuki, Kengo",
+        "title":"",
+        "image":"nophoto",
+        "email":"kengoscal@gmail.com"
+      }
+    ]
+  },
+  {  
+    "date":"Fall 2008 - Spring 2009",
+    "students":[  
+      {  
+        "name":"Kitsukawa, James",
+        "title":"",
+        "image":"nophoto"
+      },
+      {  
+        "name":"Yeh, William",
+        "title":"",
+        "image":"nophoto"
+      }
+    ]
+  }
+]

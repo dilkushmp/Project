@@ -1,0 +1,80 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">{{ site.title }}</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        <li class="nav-link"><a href="{{ "/news" | prepend: site.baseurl }}">News</a>
+        <li class="nav-link"><a href="{{ "/people/tomizuka.html" | prepend: site.baseurl }}">Professor</a>
+        <li class="nav-link"><a href="{{ "/people/students.html" | prepend: site.baseurl }}">Current Students</a>
+        <li class="nav-link"><a href="{{ "/research" | prepend: site.baseurl }}">Research</a>
+        <li class="nav-link"><a href="{{ "/misc" | prepend: site.baseurl }}">Miscellaneous</a>
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li class="nav-link"><a href="{{ "/contact-us" | prepend: site.baseurl }}">Directions</a>
+        <li class="nav-link"><a href="{{ "/privacy" | prepend: site.baseurl }}">Privacy Statement</a>
+        <li>
+          <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope-o"></i>
+            Webmaster
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="text">&copy; 2016 Mechanical Systems Control Laboratory of <a href="http://www.me.berkeley.edu/">Mechanical Engineering Dept.</a>  at <a href="http://www.berkeley.edu/">UC Berkeley</a></p>
+      <p class="text">Design inspired by <a href="https://github.com/bencentra/centrarium">Centrarium</a> and <a href="https://pioneers.berkeley.edu">PiE</a></p>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+$(document).ready(function() {
+
+  // Syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+
+});
+
+</script>
+
+{% if site.ga_tracking_id %}
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.ga_tracking_id }}', 'auto');
+  ga('send', 'pageview', {
+    'page': '{{ page.url }}',
+    'title': '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'
+  });
+</script>
+{% endif %}

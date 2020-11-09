@@ -1,0 +1,122 @@
+---
+layout: page-wide
+title: Alumni
+permalink: /people/alumni.html
+---
+
+<div class="people">
+  <div class="sub-heading">
+
+    <!-- PhD Scrollable Button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        PhD Students <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu scrollable-menu">
+        {% for year in site.data.phd_alumni %}
+          <li><a href="#phd_{{year.date}}">{{year.date}}</a></li>
+        {% endfor %}
+      </ul>
+    </div> |
+
+    <!-- MS Scrollable Button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        MS Students <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu  scrollable-menu">
+        {% for year in site.data.masters_alumni %}
+          <li><a href="#ms_{{year.date}}">{{year.date}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="addendum"> Not a complete list, please contact the webmaster if there are any issues</div>
+  </div>
+
+  <h2 class="sub-heading"> PhD Students </h2>
+  {% for year in site.data.phd_alumni %}
+  <a name="phd_{{year.date}}"></a><h3 class="sub-heading">{{year.date}}</h3>
+  <div class="person-images">
+
+    {% for student in year.students %}
+      <div class="person-member">
+        <div class="person-image">
+          {% if student.image == 'nophoto' %}
+            <img src="../assets/images/profile-placeholder.gif" alt="">
+            <img src="../assets/images/profile-placeholder.gif" alt="">
+          {% else %}
+            <img src="../assets/images/people/{{ student.image }}.jpg" alt="">
+            <img src="../assets/images/people/{{ student.image }}1.jpg" alt="">
+          {% endif %}
+        </div>
+        <div class="person-description">
+          <div class="person-name">{{ student.name }}</div>
+          <p>{{ student.title }}</p>
+          {% if student.email %}
+          <p><a href="mailto:{{ student.email }}" target="_new">Email</a> |
+          {% else %}
+          <p> Email |
+          {% endif %}
+          {% if student.homepage %}
+          <a href="{{ student.homepage }}" target="_new">Homepage</a> |
+          {% else %}
+          Homepage |
+          {% endif %}
+          {% if student.company %}
+          <a href="{{ student.company }}" target="_new">Company</a></p>
+          {% else %}
+          Company </p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <br>
+  {% endfor %}
+
+<hr>
+
+  <h2 class="sub-heading"> MS Students </h2>
+  {% for year in site.data.masters_alumni %}
+  <a name="ms_{{year.date}}"></a><h3 class="sub-heading">{{year.date}}</h3>
+  <div class="person-images">
+
+    {% for student in year.students %}
+      <div class="person-member">
+        <div class="person-image">
+          {% if student.image == 'nophoto' %}
+            <img src="../assets/images/profile-placeholder.gif" alt="">
+            <img src="../assets/images/profile-placeholder.gif" alt="">
+          {% else %}
+            <img src="../assets/images/people/{{ student.image }}.jpg" alt="">
+            <img src="../assets/images/people/{{ student.image }}1.jpg" alt="">
+          {% endif %}
+        </div>
+        <div class="person-description">
+          <div class="person-name">{{ student.name }}</div>
+          <p>{{ student.title }}</p>
+          {% if student.email %}
+          <p><a href="mailto:{{ student.email }}" target="_new">Email</a> |
+          {% else %}
+          <p> Email |
+          {% endif %}
+          {% if student.homepage %}
+          <a href="{{ student.homepage }}" target="_new">Homepage</a> |
+          {% else %}
+          Homepage|
+          {% endif %}
+          {% if student.company %}
+          <a href="{{ student.company }}" target="_new">Company</a></p>
+          {% else %}
+          Company </p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+  <br>
+  {% endfor %}
+
+</div>

@@ -1,0 +1,34 @@
+[
+  {  
+    "name":"Wang, Weixin",
+    "title":"Tsinghua University",
+    "image":"weixin",
+    "email":"stevenwang093@gmail.com",
+  }, 
+  {  
+    "name":"Zhu, Yaonan",
+    "title":"Nagoya University",
+    "image":"yaonan",
+    "email":"zhu@robo.mein.nagoya-u.ac.jp",
+  }, 
+  {  
+  "name":"Mori, Mayuko",
+  "title":"NSK Ltd.",
+  "image":"mayuko",
+  "email":"mayuko09262007@yahoo.co.jp",
+  "company":"http://www.nsk.com"
+  },
+  {  
+    "name":"Kuang, Zhian",
+    "title":"Harbin Institute of Technology",
+    "image":"Zhian",
+    "email":"zhiankuang95@gmail.com",
+    "homepage": "https://zhiankuang.github.io/ZhianKuang/"
+  },
+  {  
+    "name":"Zhao, Chunqing",
+    "title":"Beijing Institute of Technology",
+    "image":"chunqing",
+    "email":"zhaochunqingbit@gmail.com"
+  }
+]

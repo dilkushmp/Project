@@ -1,0 +1,101 @@
+@import './fonts.css';
+
+body {
+    margin: 0;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Start: homepage */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5rem;
+    width: 100%;
+    height: 93vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/homepage/homepage.png");
+    background-position: center ;
+}
+
+.homepage h1 {
+    text-align: end;
+    font-size: 36px;
+    color: white;
+    max-width: 18rem;
+    margin-right: 3rem;
+}
+
+.homepage-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.homepage-buttons a {
+    background: #139c93;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+    width: max-content;
+    font-family: 'Montserrat-Bold';
+    text-decoration: none;
+}
+
+.homepage-buttons a:focus {
+    outline: 5px double #ffd16b;
+}
+/* End: homepage */
+
+/* Start: media query */
+@media only screen and (min-width: 1050px) {
+    
+    .homepage h1 {
+        font-size: 35px;
+        max-width: 50%;
+        padding: 0 7%;
+        font-family: 'Montserrat-Semi-Bold';
+        letter-spacing: 1.5px;
+    }
+
+    .homepage-buttons {
+        justify-content: flex-end;
+    }
+
+    .homepage-buttons a {
+        padding: .5em .5em;
+        margin-right: 4em;
+        font-size: 20px;
+    }
+}
+/* End: media query */
+
+
+@media only screen and (min-width:1250px) {
+
+    .homepage h1 {
+        font-size: 43px;
+        max-width: 45%;
+        letter-spacing: 3px;
+    }
+
+    .homepage-buttons a {
+        padding: 1em 1em;
+    }
+}

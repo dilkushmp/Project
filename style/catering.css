@@ -1,0 +1,262 @@
+p,
+label {
+    font-family: 'Lato-Regular';
+    font-size: 19px;
+    color: #585a5e;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #e4a388;
+    font-family: 'Montserrat-Bold';
+    letter-spacing: 1.7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    color: #585A5E;
+    ;
+    font-size: 16px;
+    font-family: 'Lato-Bold';
+    letter-spacing: 3.36px;
+    width: 80%;
+}
+
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+svg {
+    display: none;
+}
+
+.hero-banner {
+    margin-top: 6em;
+    max-width: 100%;
+}
+
+.hero-statement {
+    text-align: center;
+}
+
+.hero-statement h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.hero-statement article {
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+.ampersand {
+    font-size: 30px;
+    color: #97c57a;
+    font-family: 'Montserrat-Semi-Bold';
+}
+
+.catering-menu {
+    background-color: #97c57a;
+    text-align: center;
+    padding: 1em;
+}
+
+.catering-menu button {
+    text-transform: uppercase;
+    padding: 1em;
+    border: 4px white solid;
+    margin: 1em 0;
+    background: #97c57a;
+    color: #f7f7f7;
+    font-family: 'Montserrat-Bold';
+}
+
+.catering-menu h2 {
+    color: #f4f7f2;
+}
+
+.menu-cover-wrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.catering-contact {
+    margin: 2em 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.catering-contact p {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.catering-contact span {
+    display: flex;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.catering-icon {
+    width: 2em;
+    margin: 0 2em;
+    align-self: center;
+}
+
+.message-form {
+    display: initial;
+}
+
+.confirmation {
+    display: none;
+}
+
+form {
+    padding: 0 10%;
+}
+
+#success {
+    display: none;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 1050px) {
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    .catering-hero img {
+        width: 100vw;
+        height: 35em;
+        object-fit: cover;
+    }
+    .mousse-cups img {
+        object-position: bottom;
+    }
+    .hero-statement {
+        display: flex;
+        margin: 0 10%;
+    }
+
+    .hero-statement h2 {
+        font-size: 50px;
+    }
+
+    .hero-statement article {
+        padding: 0;
+    }
+    .ampersand {
+        align-self: center;
+        font-size: 40px;
+        margin: 0 5%;
+    }
+    .catering-menu {
+        display: grid;
+        grid-template-areas:
+        ". menuCover . downloadButton downloadButton"
+        ". menuCover title title title";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+    svg {
+        display: initial;
+        position: absolute;
+        z-index: 0;
+        max-width: 98%;
+        height: 80%;
+    }
+    .catering-menu h2 {
+        font-size: 25px;
+        grid-area: title;
+        align-self: end;
+        justify-self: end;
+        width: 80%;
+    }
+    .catering-menu div {
+        grid-area: menuCover;
+    }
+    .catering-menu a {
+        grid-area: downloadButton;
+        align-self: end;
+        justify-self: left;
+        width: 80%;
+        z-index: 3;
+    }
+
+    .catering-menu button {
+        font-size: 20px;
+    }
+
+    .menu-cover-wrapper {
+        width: 130%;
+        position: relative;
+        top: 80px;
+    }
+    .catering-contact {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 8em;
+    }
+    .contact-info-wrapper {
+        max-width: 45%;
+        margin-left: 3em;
+    }
+    .catering-icon {
+        max-width: 2em;
+        align-self: center;
+    }
+
+    .hallway-message {
+        margin-top: 3em;
+    }
+    
+    #success {
+        margin-right: 10em;
+        margin-top: 5em;
+    }
+    
+    #success h3 {
+        font-size: 30px;
+        color: #585a5e;
+    }
+
+    footer {
+        margin-top: 5em;
+    }
+
+}
+
+@media only screen and (min-width:1250px) {
+    .catering-menu h2 {
+        font-size: 30px;
+    }
+
+    .catering-menu button {
+        font-size: 25px;
+    }
+  
+}

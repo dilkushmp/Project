@@ -1,0 +1,295 @@
+@import './fonts.css';
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+}
+
+p, label{
+  font-family: 'Lato-Regular';
+  font-size: 19px;
+  color: #585a5e;
+  
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.img-bar {
+  max-width: 100%;
+  margin-top: 7em;
+  display: grid;
+  grid-template-areas:
+    "pizza veggie"
+    "burger veggie";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: .5em;
+}
+
+.img-bar img {
+  max-width: 100%;
+}
+
+.pizza-assembly {
+  grid-area: pizza;
+  height: 100%;
+}
+
+.order-up {
+  grid-area: burger;
+  height: 100%;
+  object-fit: cover;
+}
+
+.veggie-tray {
+  grid-area: veggie;
+}
+
+.front-door,
+.cross-illus {
+  display: none;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-us div {
+  text-align: center;
+  padding: 0 10%;
+}
+
+.about-us p {
+  text-align: center;
+}
+
+.about-us h1 {
+  color: #97c57a;
+  font-size: 36px;
+  opacity: 0.6;
+}
+
+.about-us img {
+  width: 20%;
+  margin-bottom: 1em;
+} 
+
+.about-statements div {
+  margin-bottom: 3em;
+}
+
+.alumni {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/About-Us/dining-booths.jpg");
+  height: 30em;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+}
+
+.alumni-recognition {
+  display: flex;
+  margin-top: 1em;
+  padding: 0 10%;
+}
+
+.alumni-recognition img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 30px;
+  align-self: center;
+}
+
+.carousel-quotes {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(19, 156, 147, 0.6);
+  background-blend-mode: overlay;
+  margin-top: 2em;
+}
+
+.carousel-quotes span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authorName {
+  font-size: 17px;
+}
+
+.corporate-sponsors {
+  display: none;
+}
+
+.education-support {
+  text-align: left;
+  padding: 0 10%;
+}
+
+.education-support h1 {
+  margin-bottom: 2em;
+}
+
+.education-support h2 {
+  color: #139c93;
+}
+
+.heart-cookies {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.program-categories {
+  margin-bottom: 3em;
+}
+
+.program-call-to-action {
+  font-size: 25px;
+  color: #139c93;
+  text-align: center;
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 1050px) {
+
+  p {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 19px;
+  }
+  
+  .img-bar {
+    display: grid;
+    grid-template-areas: 
+    "door door pizza veggie"
+    "door door burger veggie";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    margin-top: 7em;
+    margin-bottom: 1em;
+  }
+  
+  .front-door {
+    grid-area: door;
+    display: initial;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cross-illus {
+    display: initial;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .about-statements {
+    display: flex;
+  }
+
+  .about-us {
+    flex-direction: column-reverse;
+  }
+
+  .about-us h1 {
+    font-size: 60px;
+    align-self: flex-end;
+    margin-right: 2em;
+    color: #139c93;
+    margin-bottom: 0;
+  }
+
+  .about-us div {
+    padding: 0 1em;
+  }
+
+  .about-us img {
+    width: 30%;
+  }
+
+  .alumni {
+    height: 60em;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .alumni-recognition {
+    align-items: center;
+    width: 65%;
+    margin: 5em auto;
+  }
+
+  .alumni-recognition img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .carousel-quotes {
+    justify-content: center;
+  }
+
+  .carousel-quotes span {
+    max-width: 30%;
+  }
+
+  .corporate-sponsors img {
+    max-width: 9%;
+    object-fit: contain;
+  }
+
+  .corporate-sponsors {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .education-support h1 {
+    font-size: 46px;
+  }
+
+  .education-support h2 {
+    font-size: 30px;
+    font-family: 'Montserrat-Bold';
+  }
+
+  .program-categories {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .program-categories div {
+    max-width: 30%;
+  }
+
+  .program-contact-info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .program-call-to-action {
+    font-size: 30px;
+  }
+
+  .hallway-message label, input, textarea{
+    margin-left: 30px;
+  }
+
+  .heart-cookies {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+}

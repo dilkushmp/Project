@@ -1,0 +1,213 @@
+body {
+    margin-top: 9em;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Semi-Bold";
+    color: #585a5e;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: "Lato-Regular";
+    color: #585A5E;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.container img {
+    max-width: 100%;
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #585A5E;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.desktop-display {
+    display: none;
+}
+
+.hallway-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    line-height: 3em;
+}
+
+.hallway-contact img {
+    width: 8%;
+    height: 8%;
+}
+
+.hallway-contact a {
+    text-decoration: none;
+    background: #ffffff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.hallway-contact h2 {
+    font-size: 24px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.contact-info img {
+    margin-right: 1em;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato-Regular';
+    margin-bottom: 1em;
+}
+
+.hours-of-operation {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 10%;
+}
+
+.hours-of-operation div {
+    display: flex;
+    align-items: center;
+}
+
+.hours-of-operation img {
+    width: 9%;
+}
+
+.location {
+    margin: 0 10%;
+}
+
+.location h2 {
+    margin-bottom: 2em;
+}
+
+.find-us {
+    display: flex;
+    align-content: center;
+}
+
+.find-us img {
+    object-fit: contain;
+}
+
+iframe {
+    margin-top: 2em;
+    width: 100%;
+    height: 200px;
+}
+
+.contact-form h2 {
+    padding: 10%;
+}
+
+form {
+    padding: 0 10%;
+}
+
+
+@media only screen and (min-width: 1050px) {
+    .mobile-display {
+        display: none;
+    }
+    .desktop-display {
+        display: initial;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "contact hours hours form" 
+        "map map map form" 
+        "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr 0.05fr;
+    }
+    .hallway-contact {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+    .hallway-contact span {
+        margin-bottom: 10px;
+    }
+    .hallway-contact h2 {
+        font-size: 20px;
+    }
+    .hallway-contact a {
+        font-size: 17px;
+    }
+    .hallway-contact img {
+        width: 25px;
+        height: 25px;
+    }
+    .contact-info {
+        grid-area: contact;
+    }
+    .hours-of-operation {
+        grid-area: hours;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .hours-of-operation h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .hours-of-operation p {
+        font-size: 17px;
+        line-height: 1.1rem;
+    }
+    .hours-of-operation img {
+        width: 30px;
+        height: 30px;
+    }
+    .hours-of-operation div {
+        display: flex;
+    }
+    iframe {
+        width: 60vw;
+        height: 300px;
+    }
+    .location {
+        grid-area: map;
+        margin: 2% 7%;
+    }
+    .location h2 {
+        font-size: 20px;
+    }
+
+    .location p {
+        font-size: 17px;
+    }
+
+    .location img {
+        width: 24px;
+    }
+
+    .contact-form {
+        grid-area: form;
+    }
+
+    footer {
+        grid-area: footer;
+        align-self: end;
+    }
+}
